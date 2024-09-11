@@ -73,6 +73,7 @@ const RecursivePartition = ({ id, onRemove }) => {
             width={splitDirection === "V" ? 300 : undefined}
             height={splitDirection === "H" ? 300 : undefined}
             minConstraints={[150, 150]}
+            style={{ flexBasis: "50%" }}
             maxConstraints={[window.innerWidth, window.innerHeight]}
             className="relative border border-gray-400"
           >
@@ -83,6 +84,7 @@ const RecursivePartition = ({ id, onRemove }) => {
             />
           </ResizableBox>
         ))}
+         
       </div>
     );
   };
